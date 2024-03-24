@@ -54,6 +54,7 @@ function App() {
   useEffect(() => {
     getCurrentLocationWeather();
     getWeatherByCity(selectedCity);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCity]);
 
   return (
