@@ -54,7 +54,7 @@ function App() {
   useEffect(() => {
     getCurrentLocationWeather();
     getWeatherByCity(selectedCity);
-  }, []);
+  }, [selectedCity]);
 
   return (
     <main className="main">
